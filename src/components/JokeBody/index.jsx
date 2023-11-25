@@ -1,9 +1,6 @@
 import './style.css';
 
 export const JokeBody = ({ userName, userAvatar, text }) => {
-  console.log(userName);
-  console.log(userAvatar);
-  console.log(text);
   return (
     <div className="joke__body">
       <div className="joke__user">

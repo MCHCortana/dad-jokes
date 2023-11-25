@@ -19,7 +19,6 @@ export const HomePage = () => {
     };
     fetchingData();
   }, []);
-  console.log('jokes', jokes);
   return (
     <>
       {jokes && (
