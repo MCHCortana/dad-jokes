@@ -4,10 +4,10 @@ import { LikeButtons } from '../../components/LikeButtons';
 
 export const Joke = ({ joke }) => {
   console.log('joke', joke);
-  const { id, avatar, text, likes, dislikes } = joke;
+  const { avatar, name, text, likes, dislikes } = joke;
   return (
     <div className="joke">
-      <JokeBody userName={id} userAvatar={avatar} text={text} />
+      <JokeBody userName={name} userAvatar={avatar} text={text} />
       <LikeButtons likes={likes} dislikes={dislikes} />
     </div>
   );
