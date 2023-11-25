@@ -1,13 +1,14 @@
 import './style.css';
-
 import { JokeBody } from '../JokeBody';
 import { LikeButtons } from '../../components/LikeButtons';
 
-export const Joke = () => {
+export const Joke = ({ joke }) => {
+  console.log('joke', joke);
+  const { id, avatar, text, likes, dislikes } = joke;
   return (
     <div className="joke">
-      <JokeBody />
-      <LikeButtons />
+      <JokeBody userName={id} userAvatar={avatar} text={text} />
+      <LikeButtons likes={likes} dislikes={dislikes} />
     </div>
   );
 };

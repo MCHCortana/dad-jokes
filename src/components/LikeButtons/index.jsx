@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './style.css';
-export const LikeButtons = () => {
-  const [liked, setLiked] = useState(0);
-  const [disliked, setDisliked] = useState(0);
+export const LikeButtons = ({ likes, dislikes }) => {
+  const [liked, setLiked] = useState(likes);
+  const [disliked, setDisliked] = useState(dislikes);
   return (
     <div className="joke__likes">
       {' '}
